@@ -39,14 +39,11 @@ ul {
 a {
     text-decoration: none;
 }
-.title{
+h1,h2,h3,h4,h5,h6,p{
     margin: 0;
     padding: 0;
 }
-.content{
-    margin: 0;
-    padding: 0;
-}
+
 .photo{
     display: block;
 }
@@ -384,7 +381,7 @@ color:var(--background-color);
     align-items: center;
     width: 44px;
     height: 44px;
-    fill:var(--icons-color);
+    fill: var(--icons-color);
     background-color: var(--background-color);
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -479,17 +476,17 @@ display: flex;
 flex-direction: column;
 margin-left: 70px;
 }
-.social-list{
+.social-invers{
     display: flex;
 }
 .social-linkbox__title {
     margin-bottom: 20px;
     color: var(--background-color);
 }
-.social-list__item:not(:last-child){
+.social-invers__item:not(:last-child){
     margin-right: 10px;
 }
-.social-list__link{
+.social-invers__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -500,8 +497,8 @@ margin-left: 70px;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-list__link:hover,
-.social-list__link:focus{
+.social-invers__link:hover,
+.social-invers__link:focus{
     background-color:var(--akcent-color);
 }
 
@@ -572,13 +569,13 @@ margin-left: 70px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.portfolio .list{
+.button-list{
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
 }
 
-.portfolio .list .button {
+.button-list__button {
 
     font-family: inherit;
     font-weight: 500;
@@ -599,12 +596,12 @@ margin-left: 70px;
                 color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio .list .item:not(:last-child){
+.button-list__item:not(:last-child){
     margin-right: 8px;
 }
 
-.portfolio .list .button:focus,
-.portfolio .list .button:hover {
+.button-list__button:focus,
+.button-list__button:hover {
     background-color: var(--akcent-color);
     color: var(--background-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -615,7 +612,7 @@ margin-left: 70px;
     gap: 30px;
     justify-content: center;
 }
-.portfolio .card-list .link{
+.card-list__link{
     display: block;
     cursor: default;
     }
@@ -628,14 +625,14 @@ margin-left: 70px;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
 }
-.portfolio .card-list .link:focus,
-.portfolio .card-list .link:hover{
+.card-list__link:focus,
+.card-list__link:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
      0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio .card-list .title {
+.card-head__title {
     margin-bottom: 4px;
 
     font-weight: 700;
@@ -645,7 +642,7 @@ margin-left: 70px;
     color: var(--primery-text-colop);
 }
 
-.portfolio .card-list .content {
+.card-head__content {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
@@ -674,20 +671,21 @@ margin-left: 70px;
     background-color: rgba(33, 150, 243, 0.9);
     
 }
-.portfolio .card-list .link:focus .card-overlay,
-.portfolio .card-list .link:hover .card-overlay{
+.card-list__link:focus .card-overlay,
+.card-list__link:hover .card-overlay{
     transform: translateY(0);
 }
-.wrapper .card-overlay .content{
+.card-overlay__content{
 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-font-size: 18px;
-line-height: 1.55;
-color: var(--background-color);
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--background-color);
 }
 /*Модальне вікно*/
+
 .backdrop{
     position: fixed;
     top: 0;
@@ -763,21 +761,21 @@ color: var(--background-color);
     color:var(--secondary-text-color);
 }
 
-.form-field .icon{
+.form-field__icon{
     position: absolute;
     left: 12px;
     top: 50%;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field:hover .icon,
-.form-field:hover .input,
-.input:focus + .icon,
-.input:focus{
+.form-field:hover .form-field__icon,
+.form-field:hover .form-field__input,
+.form-field__input:focus + .form-field__icon,
+.form-field__input:focus{
     border-color: var(--akcent-color);
     fill: var(--akcent-color);
 }
 
-.input {
+.form-field__input {
     width: 100%;
     height: 40px;
     margin: 0;
@@ -793,7 +791,7 @@ color: var(--background-color);
 .form-field label{
     margin-bottom: 4px;
 }
-.form .head{
+.form__head{
     display: flex;
     justify-content: center;
     margin-bottom: 12px;
@@ -823,7 +821,7 @@ textarea::placeholder{
 
     color: rgba(117, 117, 117, 0.5);
 }
-.checkbox .title{
+.checkbox__title{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -831,15 +829,15 @@ textarea::placeholder{
     line-height: 1.7;
     color: var(--secondary-text-color);
 }
-.checkbox .title .link{
+.checkbox__link{
     color: var(--akcent-color);
     text-decoration:underline;
 }
-.form .submit{
+.form-submit{
     display: block;
     justify-content: center;
 }
-.submit .checkbox{
+.checkbox{
     position: relative;
     display:flex;
     justify-content: center;
@@ -847,7 +845,7 @@ textarea::placeholder{
     margin-bottom: 30px;
 }
 
-.submit .checkbox input[type="checkbox"]{
+.checkbox input[type="checkbox"]{
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -859,7 +857,7 @@ textarea::placeholder{
     clip-path: inset(50%);
     margin: -1px;
 }
-.submit .button{
+.form-submit__button{
     display:flex;
     margin-left: auto;
     margin-right: auto;
@@ -886,13 +884,13 @@ textarea::placeholder{
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.submit .button:focus,
-.submit .button:hover{
+.form-submit__button:focus,
+.form-submit__button:hover{
     border-color: var(--hero-btn-hov-color);
     background: var(--hero-btn-hov-color);
 }
 
-.submit .checkbox .icon{
+.checkbox__icon{
     display: block;
 
     margin-right: 8px;
@@ -902,7 +900,7 @@ textarea::placeholder{
     fill: var(--primery-text-colop);
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.submit .checkbox input:checked + .icon{
+.checkbox input:checked + .checkbox__icon{
     fill: var(--background-color);
     background: var(--akcent-color);
     background-image: url(../imges/check.svg);

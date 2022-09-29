@@ -141,7 +141,7 @@
                     <img src="./imges/igor.jpg" alt="фото Ігоря Дем'яненко" class="photo" width="270" height="260">
                     <div class="content-box">
                         <h3 class="content-box__title">Ігор Дем'яненко</h3>
-                        <p lang="en" class="content-box__content">Product Designer</p>
+                        <p lang="en" class="content content-box__content">Product Designer</p>
                         <ul class="social-list">
                             <li class="social-list__item">
                                 <a href="#" class="social-list__link">
@@ -176,7 +176,7 @@
                     <img src="./imges/olga.jpg" alt="фото Ольги Рєпіної" class="photo" width="270" height="260">
                     <div class="content-box">
                         <h3 class="content-box__title">Ольга Рєпіна</h3>
-                        <p lang="en" class="content-box__content">Frontend Developer</p>
+                        <p lang="en" class="content content-box__content">Frontend Developer</p>
                         <ul class="social-list">
                             <li class="social-list__item">
                                 <a href="#" class="social-list__link">
@@ -246,7 +246,7 @@
                     <img src="./imges/mihail.jpg" alt="фото Михайла Єрмакова" class="photo" width="270" height="260">
                     <div class="content-box">
                     <h3 class="content-box__title">Михайло Єрмаков</h3>
-                    <p lang="en" class="content-box__content">UI Designer</p>
+                    <p lang="en" class="content content-box__content">UI Designer</p>
                     <ul class="social-list">
                         <li class="social-list__item">
                             <a href="#" class="social-list__link">
@@ -346,32 +346,32 @@
                 </address>
             </div>
             <div class="social-linkbox">
-            <h3 class="social-linkbox__title">приєднуйтесь</h3>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="#">
-                        <svg class="social-list__icon" width="20" height="20">
+            <h3 class="title social-linkbox__title">приєднуйтесь</h3>
+            <ul class="social-invers">
+                <li class="social-invers__item">
+                    <a class="social-invers__link" href="#">
+                        <svg class="social-invers__icon" width="20" height="20">
                             <use href="./imges/icons.svg#instagram"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="#">
-                        <svg class="social-list__icon" width="20" height="20">
+                <li class="social-invers__item">
+                    <a class="social-invers__link" href="#">
+                        <svg class="social-invers__icon" width="20" height="20">
                             <use href="./imges/icons.svg#twitter"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="#">
-                        <svg class="social-list__icon" width="20" height="20">
+                <li class="social-invers__item">
+                    <a class="social-invers__link" href="#">
+                        <svg class="social-invers__icon" width="20" height="20">
                             <use href="./imges/icons.svg#facebook"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="#">
-                        <svg class="social-list__icon" width="20" height="20">
+                <li class="social-invers__item">
+                    <a class="social-invers__link" href="#">
+                        <svg class="social-invers__icon" width="20" height="20">
                             <use href="./imges/icons.svg#linkedin"></use>
                         </svg>
                     </a>
@@ -381,9 +381,8 @@
             <div class="subscribe">
                 <form class="subscribe-form">
                     <div class="shell">
-                        <label class="subscribe-form__title" for="email">Підпишіться на розсилку</label> 
-                            <input type="email" placeholder="E-mail" class="subscribe-form__input" id="email">
-                        
+                        <label class="title subscribe-form__title" for="email">Підпишіться на розсилку</label> 
+                            <input type="email" placeholder="E-mail" class="subscribe-form__input" id="email">                       
                     </div>
                     <button type="submit" class="button">Підписатися
                         <svg class="button__icon" width="24px" height="24px">
@@ -399,42 +398,42 @@
         <div class="modal">
             <form class="form">
                 
-                    <b class="head">Залиште свої дані, ми вам передзвонимо</b>
+                    <b class="form__head">Залиште свої дані, ми вам передзвонимо</b>
                     <div class="form-field">
-                        <label for="user-name" class="title">Ім'я</label>
-                        <input type="text" name="user-name" id="user-name" class="input">
-                        <svg class="icon" width="18px" height="18px">
+                        <label for="user-name" class="form-field__title">Ім'я</label>
+                        <input type="text" name="user-name" id="user-name" class="form-field__input">
+                        <svg class="form-field__icon" width="18px" height="18px">
                             <use href="./imges/icons.svg#person"></use>
                         </svg>
                     </div>
                     <div class="form-field">
-                        <label for="tel" class="title">Телефон</label>
-                        <input type="tel" name="tel" id="tel" class="input">
-                        <svg class="icon" width="18px" height="18px">
+                        <label for="tel" class="form-field__title">Телефон</label>
+                        <input type="tel" name="tel" id="tel" class="form-field__input">
+                        <svg class="form-field__icon" width="18px" height="18px">
                             <use href="./imges/icons.svg#phone"></use>
                         </svg>
                     </div>
                    <div class="form-field">
-                        <label for="mail" class="title">Пошта</label>
-                        <input type="email" name="mail" id="mail" class="input">
-                        <svg class="icon" width="18px" height="18px">
+                        <label for="mail" class="form-field__title">Пошта</label>
+                        <input type="email" name="mail" id="mail" class="form-field__input">
+                        <svg class="form-field__icon" width="18px" height="18px">
                             <use href="./imges/icons.svg#email"></use>
                         </svg>
                    </div>
                     <div class="form-field comment">
-                        <label for="comment" class="title">Коментар</label>
+                        <label for="comment" class="form-field__title">Коментар</label>
                     <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст" class="textarea-input"></textarea>
                     </div>
-                        <div class="submit">
+                        <div class="form-submit">
                             <div class="checkbox">
                                 
-                                <label class="title">
-                                    <input type="checkbox" name="privacy-policy" class="check">
-                                    <span class="icon">
+                                <label class="checkbox__title">
+                                    <input type="checkbox" name="privacy-policy" class="checkbox__check">
+                                    <span class="checkbox__icon">
                                     </span>
-                                    Погоджуюся з розсилкою та приймаю <a href="#" class="link">Умови договору</a></label>
+                                    Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox__link">Умови договору</a></label>
                             </div>
-                            <button type="submit" class="button">Відправити</button>
+                            <button type="submit" class="form-submit__button">Відправити</button>
                         </div>
             </form>
             
