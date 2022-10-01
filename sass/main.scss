@@ -1,6 +1,44 @@
+@import './utils/variables';
+@import './utils/utils';
+@import './components/page-header';
+@import './components/logo';
+@import './components/title';
+@import './components/overlay';
+@import './components/hero';
+@import './components/princip';
+@import './components/works';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+
 body {
-     color: var(--primery-text-colop);
+     color: $primery-text-colop;
      font-family: 'Roboto', sans-serif;
      letter-spacing: 0.03em;
-     background-color: var(--background-color)
- }
+     background-color: $background-color;
+}
+
+ ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+.photo{
+    display: block;
+}
+
+.conteiner{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
