@@ -1,15 +1,5 @@
-.logo-accent {
-     font-family: 'Raleway', sans-serif;
-     font-style: normal;
-     font-weight: 700;
-     font-size: 26px;
-     line-height: 1.2;
-     color: $accent-color;
- }
-
- 
 .logo {
-     display: block;
+     display: flex;
  
      font-family: 'Raleway', sans-serif;
      font-style: normal;
@@ -17,5 +7,14 @@
      font-size: 26px;
      line-height: 1.2;
      color: $logo-text-color;
+     &__accent {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        color: $accent-color;
+    }
+   
  }
 
