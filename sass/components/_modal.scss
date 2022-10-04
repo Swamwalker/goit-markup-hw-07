@@ -34,9 +34,9 @@
      cursor: pointer;
  
      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     &:focus,
+     &:hover{
+         fill: $accent-color;
+     }
+     
  }
- .close:focus,
- .close:hover{
-     fill: $accent-color;
- }
- 

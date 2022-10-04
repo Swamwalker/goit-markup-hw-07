@@ -18,13 +18,11 @@
      left: 12px;
      top: 50%;
      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
- .form-field:hover .form-field__icon,
- .form-field:hover .form-field__input,
- .form-field__input:focus + .form-field__icon,
- .form-field__input:focus{
-     border-color: $accent-color;
-     fill: $accent-color;
+     .form-field:hover &,
+     .form-field__input:focus + &{
+        border-color: $accent-color;
+        fill: $accent-color;
+     }
  }
  
  .form-field__input {
@@ -39,6 +37,11 @@
      border-radius: 4px;
      cursor: pointer;
      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     .form-field:hover &,
+     &:focus{
+        border-color: $accent-color;
+        fill: $accent-color;
+     }
  }
  .form-field label{
      margin-bottom: 4px;
@@ -135,13 +138,14 @@
  
      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                  background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                 &:focus,
+                 &:hover{
+                     border-color: $hero-btn-hov-color;
+                     background: $hero-btn-hov-color;
+                 }
+                 
  }
- .form-submit__button:focus,
- .form-submit__button:hover{
-     border-color: $hero-btn-hov-color;
-     background: $hero-btn-hov-color;
- }
- 
+
  .checkbox__icon{
      display: block;
  
@@ -151,13 +155,14 @@
      background-image: url(../imges/checkbox.svg);
      fill: $primery-text-colop;
      transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     .checkbox input:checked + &{
+        fill: $background-color;
+        background: $accent-color;
+        background-image: url(../imges/check.svg);
+        background-size: contain;
+        background-origin: border-box;
+        border-radius: 2px;
+    }
  }
- .checkbox input:checked + .checkbox__icon{
-     fill: $background-color;
-     background: $accent-color;
-     background-image: url(../imges/check.svg);
-     background-size: contain;
-     background-origin: border-box;
-     border-radius: 2px;
- }
+
  

@@ -14,12 +14,13 @@
      padding-top: 63px;
      padding-bottom: 63px;
      background-color: rgba(33, 150, 243, 0.9);
+     .card-list__link:focus &,
+     .card-list__link:hover &{
+         transform: translateY(0);
+     }
      
  }
- .card-list__link:focus .card-overlay,
- .card-list__link:hover .card-overlay{
-     transform: translateY(0);
- }
+
  .card-overlay__content{
  
      font-family: 'Roboto';

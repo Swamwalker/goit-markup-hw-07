@@ -17,33 +17,33 @@
  .address-list__item:not(:last-child){
      margin-bottom: 9px;
  }
- .address-list__first {
-     font-style: normal;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 1.7;
-     color: $background-color;
-     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ .address-list__link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+
+    &--map {
+        color: $background-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus{
+            color: $accent-color;
+        }
+    }
+
+    &--contact{
+        
+        color: $footer-text-secondary-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus{
+            color: $accent-color;
+        }
+
+    }
  }
  
- .address-list__second,
- .address-list__third {
-     font-style: normal;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 1.7;
-     color: $footer-text-secondary-color;
-     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
- 
- .address-list__first:hover,
- .address-list__second:hover,
- .address-list__third:hover,
- .address-list__first:focus,
- .address-list__second:focus,
- .address-list__third:focus {
-     color: $accent-color;
- }
  .social-linkbox{
  display: flex;
  flex-direction: column;
@@ -69,12 +69,13 @@
      background-color: rgba(255, 255, 255, 0.1);
      border-radius: 50%;
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     &:hover,
+     &:focus{
+         background-color:$accent-color;
+     }
+     
  }
- .social-invers__link:hover,
- .social-invers__link:focus{
-     background-color:$accent-color;
- }
- 
+
  .subscribe{
      display: inline-flex;
      margin-left: 93px;
